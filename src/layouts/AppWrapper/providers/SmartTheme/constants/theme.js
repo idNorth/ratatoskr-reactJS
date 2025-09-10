@@ -1,3 +1,3 @@
 export const theme = {
-  main: 'red'
-}
+  main: "red",
+};
