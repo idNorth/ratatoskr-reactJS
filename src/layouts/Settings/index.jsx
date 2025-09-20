@@ -1,15 +1,16 @@
 import React from "react";
 
-// styles
-import { Page } from "styles/layout";
+// components
+import { Title } from "components/Title";
 
 // styles
 import { Content } from "./styles";
+import { Page } from "styles/layout";
 
 export const Settings = () => {
   return (
     <Page>
-      <Content>Settings</Content>
+      <Title>Settings</Title>
     </Page>
   );
 };
