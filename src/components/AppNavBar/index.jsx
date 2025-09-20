@@ -1,5 +1,8 @@
 import React from "react";
 
+// components
+import { Icon } from "components/Icon";
+
 // constants
 import { OPTIONS } from "./constants";
 
@@ -15,6 +18,7 @@ export const AppNavBar = () => {
             {ops.map((op, index2) => {
               return (
                 <Element key={index2}>
+                  <Icon {...op.icon} />
                   <Label>{op.label}</Label>
                 </Element>
               );
