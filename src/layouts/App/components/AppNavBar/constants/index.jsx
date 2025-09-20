@@ -5,8 +5,8 @@ export const OPTIONS = [
   [
     {
       label: <FormattedMessage id="NAVBAR.RECIPES" />,
-      icon: { name: "CookingPotRegular", height: 36, width: 36, color: "red" },
-      iconActive: { name: "CookingPotSolid", height: 36, width: 36 },
+      icon: { name: "CookingPotRegular", height: 24, width: 21 },
+      iconActive: { name: "CookingPotSolid", height: 21, width: 24 },
     },
   ],
   [],
