@@ -7,13 +7,13 @@ import * as icons from "./icons";
 import { Wrapper } from "./styles";
 
 export const Icon = ({ name, ...props }) => {
-  const iconSVG = useMemo(() => icons?.[name], [name]);
+  const IconSVG = useMemo(() => icons?.[name], [name]);
 
-  if (!iconSVG) return null;
+  if (!IconSVG) return null;
 
   return (
     <Wrapper {...props}>
-      <img src={iconSVG} alt={name} />
+      <IconSVG />
     </Wrapper>
   );
 };
