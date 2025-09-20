@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter } from "react-router";
 
 // providers
 import { SmartIntl } from "./providers/SmartIntl";
@@ -9,7 +10,9 @@ export const AppWrapper = ({ children }) => {
   return (
     <SmartIntl>
       <SmartQuery>
-        <SmartTheme>{children}</SmartTheme>
+        <SmartTheme>
+          <BrowserRouter>{children}</BrowserRouter>
+        </SmartTheme>
       </SmartQuery>
     </SmartIntl>
   );

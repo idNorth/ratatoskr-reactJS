@@ -12,12 +12,15 @@ export const Wrapper = styled.aside`
 
 export const Part = styled.div``;
 
-export const Element = styled.div`
+export const Element = styled.a`
   display: flex;
   padding: 4px 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  &: hover {
+    cursor: pointer;
+  }
 `;
 
 export const Label = styled.p`

@@ -23,10 +23,3 @@ export const Main = styled.main`
   height: calc(100vh - ${APP_HEADER_HEIGHT}px);
   width: calc(100vw - ${APP_ASIDE_WIDTH}px);
 `;
-
-export const Page = styled.div`
-  height: 4000px;
-  margin: 0 auto;
-  max-width: 1024px;
-  background-color: red;
-`;
