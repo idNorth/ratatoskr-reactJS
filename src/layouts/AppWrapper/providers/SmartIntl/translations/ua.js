@@ -3,4 +3,7 @@ export const ua = {
     RECIPES: "Рецепти",
     SETTINGS: "Налаштування",
   },
+  SETTINGS_PAGE: {
+    TITLE: "Налаштування",
+  },
 };

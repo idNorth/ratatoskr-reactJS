@@ -1,4 +1,5 @@
 import React from "react";
+import { useIntl } from "react-intl";
 
 // components
 import { Title } from "components/Title";
@@ -8,9 +9,10 @@ import { Content } from "./styles";
 import { Page } from "styles/layout";
 
 export const Settings = () => {
+  const { formatMessage } = useIntl();
   return (
     <Page>
-      <Title>Settings</Title>
+      <Title>{formatMessage({ id: "SETTINGS_PAGE.TITLE" })}</Title>
     </Page>
   );
 };
