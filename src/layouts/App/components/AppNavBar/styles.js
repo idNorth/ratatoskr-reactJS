@@ -18,4 +18,7 @@ export const Element = styled.div`
   flex-direction: column;
 `;
 
-export const Label = styled.p``;
+export const Label = styled.p`
+  color: ${({ theme }) => theme.colors.gray300};
+  font-size: ${({ theme }) => theme.fontSizes.m};
+`;

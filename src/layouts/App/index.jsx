@@ -2,8 +2,8 @@ import React from "react";
 import { useIntl } from "react-intl";
 
 // components
-import { AppNavBar } from "components/AppNavBar";
-import { AppHeader } from "components/AppHeader";
+import { AppNavBar } from "./components/AppNavBar";
+import { AppHeader } from "./components/AppHeader";
 
 // styles
 import { Wrapper, Body, Main, Page } from "./styles";
