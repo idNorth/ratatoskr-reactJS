@@ -24,3 +24,15 @@ h3 {
 a {
   all: unset;
 }
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: inherit;
+  background: none;
+}

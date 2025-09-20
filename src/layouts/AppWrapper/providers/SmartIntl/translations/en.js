@@ -3,4 +3,7 @@ export const en = {
     RECIPES: "Recipes",
     SETTINGS: "Settings",
   },
+  SETTINGS_PAGE: {
+    TITLE: "Settings",
+  },
 };
