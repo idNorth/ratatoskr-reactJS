@@ -20,7 +20,7 @@ export const SmartIntl = ({ children }) => {
       if (count >= DEEP_LIMIT) return;
       count += 1;
       Object.entries(cur).forEach(([k, v]) => {
-      const pathKey = `${key}.${k}`;
+        const pathKey = `${key}.${k}`;
         if (isString(v)) acc[pathKey] = v;
         else getTranslations(acc, v, pathKey, count);
       });

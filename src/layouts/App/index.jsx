@@ -6,7 +6,7 @@ import { AppNavBar } from "components/AppNavBar";
 import { AppHeader } from "components/AppHeader";
 
 // styles
-import { Wrapper, Body, Content, Content2 } from "./styles";
+import { Wrapper, Body, Main, Page } from "./styles";
 
 export const App = () => {
   const { formatMessage } = useIntl();
@@ -15,12 +15,12 @@ export const App = () => {
       <AppHeader />
       <Body>
         <AppNavBar />
-        <Content>
-          <Content2>
+        <Main>
+          <Page>
             {formatMessage({ id: "HELLO" })}
             hello
-          </Content2>
-        </Content>
+          </Page>
+        </Main>
       </Body>
     </Wrapper>
   );
