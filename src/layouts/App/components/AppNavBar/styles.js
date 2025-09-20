@@ -5,7 +5,11 @@ import { APP_ASIDE_WIDTH } from "constants/app";
 
 export const Wrapper = styled.aside`
   flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: ${APP_ASIDE_WIDTH}px;
+  justify-content: space-between;
   max-width: ${APP_ASIDE_WIDTH}px;
   box-shadow: 1px 0 5px ${({ theme }) => theme.colors.gray300};
 `;

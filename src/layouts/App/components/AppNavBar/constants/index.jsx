@@ -8,17 +8,6 @@ export const OPTIONS = [
   [
     {
       label: <FormattedMessage id="NAVBAR.RECIPES" />,
-      path: ROUTES.HOME,
-      getIcon: ({ isActive }) => {
-        return {
-          name: isActive ? "CookingPotSolid" : "CookingPotRegular",
-          height: 24,
-          width: 21,
-        };
-      },
-    },
-    {
-      label: <FormattedMessage id="NAVBAR.RECIPES" />,
       path: ROUTES.RECIPES,
       getIcon: ({ isActive }) => {
         return {
@@ -29,5 +18,17 @@ export const OPTIONS = [
       },
     },
   ],
-  [],
+  [
+    {
+      label: <FormattedMessage id="NAVBAR.SETTINGS" />,
+      path: ROUTES.SETTINGS,
+      getIcon: ({ isActive }) => {
+        return {
+          name: isActive ? "GearSolid" : "GearRegular",
+          height: 24,
+          width: 21,
+        };
+      },
+    },
+  ],
 ];

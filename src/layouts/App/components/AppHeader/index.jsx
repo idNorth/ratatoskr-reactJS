@@ -11,7 +11,7 @@ export const AppHeader = () => {
     <Wrapper>
       <CornerFiller />
       <Header>
-        <Icon name="SquirrelLogo" width={36} height={40} />
+        <Icon name="AppLogo" width={36} height={40} />
       </Header>
     </Wrapper>
   );

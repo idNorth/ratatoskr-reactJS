@@ -3,6 +3,6 @@ import React from "react";
 // styles
 import { Page } from "styles/layout";
 
-export const Home = () => {
-  return <Page>Home</Page>;
+export const Settings = () => {
+  return <Page>Settings</Page>;
 };
