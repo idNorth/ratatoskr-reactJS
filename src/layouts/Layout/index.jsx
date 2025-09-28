@@ -11,7 +11,7 @@ import { ROUTES, ROUTES_HUB } from "constants/routes";
 import { LANGUAGES, DEFAULT_LANGUAGE } from "constants/languages";
 
 // styles
-import { Body, Main } from "./styles";
+import { Wrapper, Main } from "./styles";
 
 export const Layout = () => {
   const { language } = useParams();
@@ -20,7 +20,7 @@ export const Layout = () => {
   }
 
   return (
-    <Body>
+    <Wrapper>
       <AppNavBar />
       <Main>
         <Routes>
@@ -29,6 +29,6 @@ export const Layout = () => {
           <Route path="*" element={<Navigate to={ROUTES.RECIPES} replace />} />
         </Routes>
       </Main>
-    </Body>
+    </Wrapper>
   );
 };

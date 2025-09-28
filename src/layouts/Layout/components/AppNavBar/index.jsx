@@ -23,6 +23,7 @@ export const AppNavBar = () => {
       {OPTIONS.map((ops, index) => {
         return (
           <Part key={index}>
+            {!index && <Icon name="AppLogo" width={32} height={46} />}
             {ops.map((op, index2) => {
               return (
                 <Element key={index2} to={getUrl({ path: op.path })}>

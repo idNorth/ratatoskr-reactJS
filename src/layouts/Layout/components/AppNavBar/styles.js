@@ -15,7 +15,11 @@ export const Wrapper = styled.aside`
   box-shadow: 1px 0 5px ${({ theme }) => theme.colors.gray300};
 `;
 
-export const Part = styled.div``;
+export const Part = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 
 export const Element = styled(Link)`
   display: flex;
