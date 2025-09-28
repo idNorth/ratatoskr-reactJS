@@ -5,5 +5,7 @@ export const ua = {
   },
   SETTINGS_PAGE: {
     TITLE: "Налаштування",
+    GENERAL_OPTION: "Загальне",
+    THEME_OPTION: "Тема",
   },
 };

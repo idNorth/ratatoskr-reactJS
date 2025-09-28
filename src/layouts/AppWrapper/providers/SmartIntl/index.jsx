@@ -35,7 +35,7 @@ export const SmartIntl = ({ children }) => {
   }, []);
 
   return (
-    <IntlProvider local={code} messages={messages}>
+    <IntlProvider locale="en" messages={messages}>
       {children}
     </IntlProvider>
   );

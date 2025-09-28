@@ -21,7 +21,7 @@ export const App = () => {
         <AppNavBar />
         <Main>
           <Routes>
-            <Route path={ROUTES.SETTINGS} element={<Settings />} exec />
+            <Route path={ROUTES.SETTINGS_HUB} element={<Settings />} />
             <Route path={ROUTES.RECIPES} element={<Recipes />} />
             <Route
               path="*"

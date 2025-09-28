@@ -5,5 +5,7 @@ export const en = {
   },
   SETTINGS_PAGE: {
     TITLE: "Settings",
+    GENERAL_OPTION: "General",
+    THEME_OPTION: "Theme",
   },
 };
