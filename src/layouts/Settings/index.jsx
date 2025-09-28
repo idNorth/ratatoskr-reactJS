@@ -1,11 +1,12 @@
 import React from "react";
 import { useIntl } from "react-intl";
 import { useParams } from "react-router-dom";
-import { Routes, Navigate, Route } from "react-router";
+import { Routes, Route } from "react-router";
 
 // components
 import { Tabs } from "components/Tabs";
 import { Title } from "components/Title";
+import { SettingsTheme } from "layouts/SettingsTheme";
 import { SettingsGeneral } from "layouts/SettingsGeneral";
 // import { Button, VARIANT } from "components/Button";
 
@@ -23,11 +24,10 @@ export const Settings = () => {
   return (
     <Page>
       <Title>{formatMessage({ id: "SETTINGS_PAGE.TITLE" })}</Title>
-      {/* <Button>Hello</Button> */}
       <Tabs value={section} options={TAB_OPTIONS} />
       <Routes>
-        <Route path={ROUTES.GENERAL} element={<SettingsGeneral />} />
-        <Route path={ROUTES.THEME} element={<SettingsGeneral />} />
+        <Route path={ROUTES.SETTINGS_GENERAL} element={<SettingsGeneral />} />
+        <Route path={ROUTES.SETTINGS_THEME} element={<SettingsTheme />} />
       </Routes>
     </Page>
   );

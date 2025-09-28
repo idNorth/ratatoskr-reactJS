@@ -22,7 +22,7 @@ export const Tabs = ({
         return (
           <Button
             key={op.value}
-            onClick={() => onChange(op, value)}
+            onClick={(event) => onChange(event, op, value)}
             isSelected={isOptionSelected(op, value)}
             isDisabled={isOptionDisabled(op, value)}
             {...op}

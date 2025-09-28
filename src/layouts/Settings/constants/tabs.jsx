@@ -13,11 +13,11 @@ export const TAB_OPTIONS = [
   {
     label: <FormattedMessage id="SETTINGS_PAGE.GENERAL_OPTION" />,
     value: TAB_KEYS.general,
-    href: `${ROUTES.SETTINGS}${ROUTES.SETTINGS_GENERAL}`,
+    to: `${ROUTES.SETTINGS}${ROUTES.SETTINGS_GENERAL}`,
   },
   {
     label: <FormattedMessage id="SETTINGS_PAGE.THEME_OPTION" />,
     value: TAB_KEYS.theme,
-    href: `${ROUTES.SETTINGS}${ROUTES.SETTINGS_THEME}`,
+    to: `${ROUTES.SETTINGS}${ROUTES.SETTINGS_THEME}`,
   },
 ];

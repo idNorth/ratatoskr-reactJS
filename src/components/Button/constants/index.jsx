@@ -1,4 +1,4 @@
 export const VARIANT = {
-  bar: "bar",
-  link: "link",
+  primary: "primary",
+  secondary: "secondary",
 };
