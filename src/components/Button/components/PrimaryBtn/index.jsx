@@ -14,11 +14,5 @@ export const PrimaryBtn = ({ children, ...props }) => {
     TagLink: StyledTagLink,
   });
 
-  const onClick = (event) => event.preventDefault();
-
-  return (
-    <Component onClick={onClick} {...props}>
-      {children}
-    </Component>
-  );
+  return <Component {...props}>{children}</Component>;
 };

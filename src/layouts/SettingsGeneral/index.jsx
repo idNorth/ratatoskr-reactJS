@@ -1,8 +1,13 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
-export const SettingsGeneral = () => {
-  const { formatMessage } = useIntl();
+// components
+import { LanguageTab } from "./components/LanguageTab";
 
-  return <div>SettingsGenaral</div>;
+export const SettingsGeneral = () => {
+  return (
+    <div>
+      <LanguageTab />
+    </div>
+  );
 };

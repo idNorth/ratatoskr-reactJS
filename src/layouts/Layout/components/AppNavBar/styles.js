@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // constants
 import { APP_ASIDE_WIDTH } from "constants/app";
@@ -16,7 +17,7 @@ export const Wrapper = styled.aside`
 
 export const Part = styled.div``;
 
-export const Element = styled.a`
+export const Element = styled(Link)`
   display: flex;
   padding: 4px 0;
   align-items: center;

@@ -2,34 +2,27 @@ import React from "react";
 import { Routes, Navigate, Route } from "react-router";
 
 // components
-import { Recipes } from "layouts/Recipes";
-import { Settings } from "layouts/Settings";
-import { AppNavBar } from "./components/AppNavBar";
+import { Layout } from "layouts/Layout";
 import { AppHeader } from "./components/AppHeader";
 
 // constants
-import { ROUTES } from "constants/routes";
+import { ROUTES, ROUTES_HUB } from "constants/routes";
+import { DEFAULT_LANGUAGE } from "constants/langauges";
 
 // styles
-import { Wrapper, Body, Main } from "./styles";
+import { Wrapper } from "./styles";
 
 export const App = () => {
   return (
     <Wrapper>
       <AppHeader />
-      <Body>
-        <AppNavBar />
-        <Main>
-          <Routes>
-            <Route path={ROUTES.SETTINGS_HUB} element={<Settings />} />
-            <Route path={ROUTES.RECIPES} element={<Recipes />} />
-            <Route
-              path="*"
-              element={<Navigate to={ROUTES.RECIPES} replace />}
-            />
-          </Routes>
-        </Main>
-      </Body>
+      <Routes>
+        <Route
+          path={ROUTES.ROOT}
+          element={<Navigate to={`/${DEFAULT_LANGUAGE}`} replace />}
+        />
+        <Route path={ROUTES_HUB.LANGUAGE} element={<Layout />} />
+      </Routes>
     </Wrapper>
   );
 };

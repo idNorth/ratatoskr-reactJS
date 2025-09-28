@@ -4,6 +4,9 @@ import React, { useMemo } from "react";
 import { PrimaryBtn } from "./components/PrimaryBtn";
 import { SecondaryBtn } from "./components/SecondaryBtn";
 
+// hooks
+import { useAppUrl } from "hooks/useAppUrl";
+
 // constants
 import { VARIANT } from "./constants";
 
@@ -15,5 +18,12 @@ export const Button = ({ variant, ...props }) => {
     return PrimaryBtn;
   }, [variant]);
 
-  return <Component {...props} />;
+  const { getUrl } = useAppUrl();
+
+  const propLink = useMemo(() => {
+    if (!props?.to) return {};
+    return { to: getUrl({ path: props.to }) };
+  }, [props?.to, getUrl]);
+
+  return <Component {...props} {...propLink} />;
 };

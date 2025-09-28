@@ -1,7 +1,15 @@
 export const ROUTES = {
-  SETTINGS: "/settings",
-  SETTINGS_HUB: "/settings/*",
-  SETTINGS_GENERAL: "/general",
+  ROOT: "/",
+  LANGUAGE: ":language",
+
+  RECIPES: "recipes",
+
+  SETTINGS: "settings",
   SETTINGS_THEME: "/theme",
-  RECIPES: "/recipes",
+  SETTINGS_GENERAL: "/general",
+};
+
+export const ROUTES_HUB = {
+  LANGUAGE: `${ROUTES.LANGUAGE}/*`,
+  SETTINGS: `${ROUTES.SETTINGS}/*`,
 };
