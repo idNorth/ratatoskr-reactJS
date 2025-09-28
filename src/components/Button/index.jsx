@@ -22,8 +22,8 @@ export const Button = ({ variant, ...props }) => {
 
   const propLink = useMemo(() => {
     if (!props?.to) return {};
-    return { to: getUrl({ path: props.to }) };
-  }, [props?.to, getUrl]);
+    return { to: getUrl({ path: props.to, lang: props.language }) };
+  }, [props?.to, props.language, getUrl]);
 
   return <Component {...props} {...propLink} />;
 };

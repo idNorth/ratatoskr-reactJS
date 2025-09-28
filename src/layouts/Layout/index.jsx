@@ -8,11 +8,10 @@ import { AppNavBar } from "./components/AppNavBar";
 
 // constants
 import { ROUTES, ROUTES_HUB } from "constants/routes";
-import { LANGUAGES, DEFAULT_LANGUAGE } from "constants/langauges";
+import { LANGUAGES, DEFAULT_LANGUAGE } from "constants/languages";
 
 // styles
 import { Body, Main } from "./styles";
-
 
 export const Layout = () => {
   const { language } = useParams();
@@ -27,10 +26,7 @@ export const Layout = () => {
         <Routes>
           <Route path={ROUTES.RECIPES} element={<Recipes />} />
           <Route path={ROUTES_HUB.SETTINGS} element={<Settings />} />
-          <Route
-              path="*"
-              element={<Navigate to={ROUTES.RECIPES} replace />}
-            />
+          <Route path="*" element={<Navigate to={ROUTES.RECIPES} replace />} />
         </Routes>
       </Main>
     </Body>

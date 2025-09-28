@@ -7,7 +7,7 @@ import { AppHeader } from "./components/AppHeader";
 
 // constants
 import { ROUTES, ROUTES_HUB } from "constants/routes";
-import { DEFAULT_LANGUAGE } from "constants/langauges";
+import { DEFAULT_LANGUAGE } from "constants/languages";
 
 // styles
 import { Wrapper } from "./styles";
