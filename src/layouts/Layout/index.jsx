@@ -4,6 +4,7 @@ import { Navigate, useParams, Route, Routes } from "react-router-dom";
 // components
 import { Recipes } from "layouts/Recipes";
 import { Settings } from "layouts/Settings";
+import { Providers } from "layouts/Providers";
 import { AppNavBar } from "./components/AppNavBar";
 
 // constants
@@ -20,15 +21,20 @@ export const Layout = () => {
   }
 
   return (
-    <Wrapper>
-      <AppNavBar />
-      <Main>
-        <Routes>
-          <Route path={ROUTES.RECIPES} element={<Recipes />} />
-          <Route path={ROUTES_HUB.SETTINGS} element={<Settings />} />
-          <Route path="*" element={<Navigate to={ROUTES.RECIPES} replace />} />
-        </Routes>
-      </Main>
-    </Wrapper>
+    <Providers>
+      <Wrapper>
+        <AppNavBar />
+        <Main>
+          <Routes>
+            <Route path={ROUTES.RECIPES} element={<Recipes />} />
+            <Route path={ROUTES_HUB.SETTINGS} element={<Settings />} />
+            <Route
+              path="*"
+              element={<Navigate to={ROUTES.RECIPES} replace />}
+            />
+          </Routes>
+        </Main>
+      </Wrapper>
+    </Providers>
   );
 };

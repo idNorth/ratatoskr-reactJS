@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Navigate, Route } from "react-router";
+import { Routes, Navigate, Route, BrowserRouter } from "react-router";
 
 // components
 import { Layout } from "layouts/Layout";
@@ -10,12 +10,14 @@ import { DEFAULT_LANGUAGE } from "constants/languages";
 
 export const App = () => {
   return (
-    <Routes>
-      <Route
-        path={ROUTES.ROOT}
-        element={<Navigate to={`/${DEFAULT_LANGUAGE}`} replace />}
-      />
-      <Route path={ROUTES_HUB.LANGUAGE} element={<Layout />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path={ROUTES.ROOT}
+          element={<Navigate to={`/${DEFAULT_LANGUAGE}`} replace />}
+        />
+        <Route path={ROUTES_HUB.LANGUAGE} element={<Layout />} />
+      </Routes>
+    </BrowserRouter>
   );
 };

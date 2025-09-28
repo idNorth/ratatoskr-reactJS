@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { IntlProvider } from "react-intl";
+import { useParams } from "react-router-dom";
 
 // utils
 import { isString } from "utils/native";
@@ -10,11 +11,11 @@ import * as translations from "./translations";
 // constatns
 import { DEEP_LIMIT } from "./constants";
 
-const code = "ua";
-
 export const SmartIntl = ({ children }) => {
+  const { language } = useParams();
+
   const messages = useMemo(() => {
-    const obj = translations[code] || translations.en;
+    const obj = translations[language] || translations.en;
 
     const getTranslations = (acc, cur, key, count) => {
       if (count >= DEEP_LIMIT) return;
@@ -32,7 +33,7 @@ export const SmartIntl = ({ children }) => {
       else getTranslations(acc, v, k, count);
       return acc;
     }, {});
-  }, []);
+  }, [language]);
 
   return (
     <IntlProvider locale="en" messages={messages}>
