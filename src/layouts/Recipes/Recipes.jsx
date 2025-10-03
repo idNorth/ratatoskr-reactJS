@@ -3,11 +3,11 @@ import { useIntl } from "react-intl";
 
 // components
 import { Title } from "components/Title";
-import { RecipeView } from "components/RecipeView";
-import { ContentViewToggle } from "components/ContentViewToggle";
+import { RecipeAspect } from "components/RecipeAspect";
+import { AspectToggle } from "components/AspectToggle";
 
 // hooks
-import { useContentViewToggle } from "hooks/useContentViewToggle";
+import { useAspectToggle } from "hooks/useAspectToggle";
 
 // styles
 import { Page } from "styles/layout";
@@ -15,13 +15,13 @@ import { Page } from "styles/layout";
 export const RecipesView = () => {
   const { formatMessage } = useIntl();
 
-  const [recipeVatiant, setRecipeVariant] = useContentViewToggle();
+  const [recipeVatiant, setRecipeVariant] = useAspectToggle();
 
   return (
     <Page>
       <Title>{formatMessage({ id: "RECIPES_PAGE.TITLE" })}</Title>
-      <ContentViewToggle value={recipeVatiant} setValue={setRecipeVariant} />
-      <RecipeView variant={recipeVatiant} />
+      <AspectToggle value={recipeVatiant} setValue={setRecipeVariant} />
+      <RecipeAspect variant={recipeVatiant} />
     </Page>
   );
 };
