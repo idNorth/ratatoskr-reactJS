@@ -1,5 +1,8 @@
 import React from "react";
 
+// styles
+import { StyledWrapper } from "./styles";
+
 export const RecipeCard = () => {
-  return <div>RecipesCard</div>;
+  return <StyledWrapper>RecipesCard</StyledWrapper>;
 };
