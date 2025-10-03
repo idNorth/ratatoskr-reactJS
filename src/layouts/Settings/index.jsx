@@ -11,7 +11,7 @@ import { SettingsGeneral } from "layouts/SettingsGeneral";
 // import { Button, VARIANT } from "components/Button";
 
 // hooks
-import { useAppUrl } from 'hooks/useAppUrl';
+import { useAppUrl } from "hooks/useAppUrl";
 
 // constants
 import { ROUTES } from "constants/routes";
@@ -35,7 +35,9 @@ export const Settings = () => {
         <Route path={ROUTES.SETTINGS_THEME} element={<SettingsTheme />} />
         <Route
           path="*"
-          element={<Navigate to={getUrl({ path: TAB_OPTIONS[0].to })} replace />}
+          element={
+            <Navigate to={getUrl({ path: TAB_OPTIONS[0].to })} replace />
+          }
         />
       </Routes>
     </Page>

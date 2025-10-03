@@ -1,8 +1,8 @@
 import React from "react";
 
-// styles
-import { Page } from "styles/layout";
+// components
+import { RecipesView } from "./Recipes";
 
 export const Recipes = () => {
-  return <Page>Recipes</Page>;
+  return <RecipesView />;
 };
