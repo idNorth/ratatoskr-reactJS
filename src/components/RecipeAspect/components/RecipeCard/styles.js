@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // styles
-import { Wrapper } from '../../styles/common';
+import { Wrapper } from "../../styles/common";
 
 export const StyledWrapper = styled(Wrapper)`
   padding: 12px;
