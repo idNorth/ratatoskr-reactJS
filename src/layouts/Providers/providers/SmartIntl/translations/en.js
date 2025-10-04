@@ -1,5 +1,7 @@
 export const en = {
   NAVBAR: {
+    AUTH: "Authorization",
+    PROFILE: "Profile",
     RECIPES: "Recipes",
     SETTINGS: "Settings",
   },

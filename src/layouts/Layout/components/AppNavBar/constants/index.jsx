@@ -7,6 +7,28 @@ import { ROUTES } from "constants/routes";
 export const OPTIONS = [
   [
     {
+      label: <FormattedMessage id="NAVBAR.AUTH" />,
+      path: ROUTES.AUTH,
+      getIcon: ({ isActive }) => {
+        return {
+          name: isActive ? "AvatarSolid" : "AvatarRegular",
+          height: 24,
+          width: 21,
+        };
+      },
+    },
+    {
+      label: <FormattedMessage id="NAVBAR.PROFILE" />,
+      path: ROUTES.PROFILE,
+      getIcon: ({ isActive }) => {
+        return {
+          name: isActive ? "AvatarSolid" : "AvatarRegular",
+          height: 24,
+          width: 21,
+        };
+      },
+    },
+    {
       label: <FormattedMessage id="NAVBAR.RECIPES" />,
       path: ROUTES.RECIPES,
       getIcon: ({ isActive }) => {

@@ -2,6 +2,8 @@ import React from "react";
 import { Navigate, useParams, Route, Routes } from "react-router-dom";
 
 // components
+import { Auth } from "layouts/Auth";
+import { Profile } from "layouts/Profile";
 import { Recipes } from "layouts/Recipes";
 import { Settings } from "layouts/Settings";
 import { Providers } from "layouts/Providers";
@@ -26,6 +28,8 @@ export const Layout = () => {
         <AppNavBar />
         <Main>
           <Routes>
+            <Route path={ROUTES_HUB.AUTH} element={<Auth />} />
+            <Route path={ROUTES.PROFILE} element={<Profile />} />
             <Route path={ROUTES.RECIPES} element={<Recipes />} />
             <Route path={ROUTES_HUB.SETTINGS} element={<Settings />} />
             <Route

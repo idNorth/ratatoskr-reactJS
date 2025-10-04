@@ -1,5 +1,7 @@
 export const ua = {
   NAVBAR: {
+    AUTH: "Авторізація",
+    PROFILE: "Профіль",
     RECIPES: "Рецепти",
     SETTINGS: "Налаштування",
   },

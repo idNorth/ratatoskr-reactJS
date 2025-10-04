@@ -50,7 +50,7 @@ class Api {
     return `http://localhost:3001/api/${this.getUrlParams(url, params)}`;
   }
 
-  async fetch(url, options) {    
+  async fetch(url, options) {
     const url1 = this.getUrl(url, options);
     const options1 = this.getUrlBody(options);
     const response = await fetch(url1, options1);
