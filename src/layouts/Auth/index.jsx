@@ -27,7 +27,10 @@ export const Auth = () => {
         <Route
           path="*"
           element={
-            <Navigate to={getUrl({ path: `${ROUTES.AUTH}${ROUTES.AUTH_SIGN_IN}` })} replace />
+            <Navigate
+              to={getUrl({ path: `${ROUTES.AUTH}${ROUTES.AUTH_SIGN_IN}` })}
+              replace
+            />
           }
         />
       </Routes>

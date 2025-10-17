@@ -51,9 +51,9 @@ class Api {
   }
 
   async fetch(url, options) {
-    const url1 = this.getUrl(url, options);
-    const options1 = this.getUrlBody(options);
-    const response = await fetch(url1, options1);
+    const _url = this.getUrl(url, options);
+    const _options = this.getUrlBody({ ...options, credentials: "include" });
+    const response = await fetch(_url, _options);
     return this.responseHnadler(response);
   }
 
