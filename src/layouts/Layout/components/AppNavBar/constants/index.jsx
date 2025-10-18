@@ -9,6 +9,7 @@ export const OPTIONS = [
     {
       label: <FormattedMessage id="NAVBAR.AUTH" />,
       path: ROUTES.AUTH,
+      filterOption: ({ isAuth }) => !isAuth,
       getIcon: ({ isActive }) => {
         return {
           name: isActive ? "AvatarSolid" : "AvatarRegular",
@@ -20,6 +21,7 @@ export const OPTIONS = [
     {
       label: <FormattedMessage id="NAVBAR.PROFILE" />,
       path: ROUTES.PROFILE,
+      filterOption: ({ isAuth }) => isAuth,
       getIcon: ({ isActive }) => {
         return {
           name: isActive ? "AvatarSolid" : "AvatarRegular",

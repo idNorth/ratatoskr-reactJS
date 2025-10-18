@@ -18,6 +18,7 @@ import { Wrapper, Main } from "./styles";
 
 export const Layout = () => {
   const { language } = useParams();
+
   if (!LANGUAGES?.[language]) {
     return <Navigate to={`/${DEFAULT_LANGUAGE}`} replace />;
   }
