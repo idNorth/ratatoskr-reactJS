@@ -7,6 +7,8 @@ export const ROUTES = {
   AUTH_SIGN_UP: "/sign_up",
 
   PROFILE: "profile",
+  PROFILE_MY_RECIPES: "/my_recipes",
+  PROFILE_FAVORITES: "/favorites",
 
   RECIPES: "recipes",
 
@@ -17,6 +19,7 @@ export const ROUTES = {
 
 export const ROUTES_HUB = {
   AUTH: `${ROUTES.AUTH}/*`,
+  PROFILE: `${ROUTES.PROFILE}/*`,
   LANGUAGE: `${ROUTES.LANGUAGE}/*`,
   SETTINGS: `${ROUTES.SETTINGS}/*`,
 };

@@ -5,6 +5,11 @@ export const en = {
     RECIPES: "Recipes",
     SETTINGS: "Settings",
   },
+  PROFILE_PAGE: {
+    TITLE: "Profile",
+    TAB_MY_RECIPES: "My recipes",
+    TAB_FAVORITES_RECIPES: "Favorites",
+  },
   RECIPES_PAGE: {
     TITLE: "Recipes",
   },

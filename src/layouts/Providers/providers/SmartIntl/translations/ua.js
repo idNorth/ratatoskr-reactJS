@@ -5,6 +5,11 @@ export const ua = {
     RECIPES: "Рецепти",
     SETTINGS: "Налаштування",
   },
+  PROFILE_PAGE: {
+    TITLE: "Профіль",
+    TAB_MY_RECIPES: "Мої рецепти",
+    TAB_FAVORITES_RECIPES: "Улюблені",
+  },
   RECIPES_PAGE: {
     TITLE: "Рецепти",
   },

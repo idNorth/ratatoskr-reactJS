@@ -30,8 +30,8 @@ export const Layout = () => {
         <Main>
           <Routes>
             <Route path={ROUTES_HUB.AUTH} element={<Auth />} />
-            <Route path={ROUTES.PROFILE} element={<Profile />} />
             <Route path={ROUTES.RECIPES} element={<Recipes />} />
+            <Route path={ROUTES_HUB.PROFILE} element={<Profile />} />
             <Route path={ROUTES_HUB.SETTINGS} element={<Settings />} />
             <Route
               path="*"
